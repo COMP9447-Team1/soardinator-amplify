@@ -160,6 +160,14 @@
                   }
                 ]
               }
+            },
+            {
+              "Effect": "Allow",
+              "Action": [
+                "cloudformation:ListStacks",
+                "s3:ListBucket"
+              ],
+              "Resource": "*"
             }
           ]
         }

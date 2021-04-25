@@ -13,6 +13,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { AmplifySignOut } from "@aws-amplify/ui-react";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,6 +37,13 @@ export default function NavBar() {
   const classes = useStyles();
 
   const [menuOpen, setMenu] = useState(false);
+
+  const history = useHistory();
+
+  const navigate = (index) => {
+    const routes = ["remediations", "upload"];
+    history.push(routes[index]);
+  };
 
   return (
     <div className={classes.root}>
@@ -64,13 +72,8 @@ export default function NavBar() {
           onKeyDown={() => setMenu(false)}
         >
           <List>
-            {[
-              "Remediations",
-              "Notification Channels",
-              "Upload Template",
-              "Exceptions",
-            ].map((text, index) => (
-              <ListItem button key={text}>
+            {["Remediations", "Upload Template"].map((text, index) => (
+              <ListItem button key={text} onClick={() => navigate(index)}>
                 <ListItemText primary={text} />
               </ListItem>
             ))}

@@ -5,44 +5,6 @@ import { Remediation } from "../../components/Remediation";
 import { Typography } from "@material-ui/core";
 import { API } from "aws-amplify";
 
-function ApiTester(props) {
-  const path = React.useRef(null);
-  const body = React.useRef(null);
-  const post = (e) => {
-    e.preventDefault();
-    API.post("SoardinatorAPI", path.current.value, {
-      body: JSON.parse(body.current.value),
-    });
-  };
-  const get = (e) => {
-    e.preventDefault();
-    API.get("SoardinatorAPI", path.current.value);
-  };
-  return (
-    <React.Fragment>
-      <input ref={path} type="text" placeholder="path" />
-      <input ref={body} type="text" placeholder="body" />
-      <input type="submit" onClick={post} value="post" />
-      <input type="submit" onClick={get} value="get" />
-    </React.Fragment>
-  );
-}
-
-const defaultRemediations = [
-  {
-    id: "enable-auto-vpc-flowlogging",
-    status: "inactive",
-  },
-  {
-    id: "enable-default-serverside-s3-bucket-encryption",
-    status: "inactive",
-  },
-  {
-    id: "EC2",
-    status: "inactive",
-  },
-];
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -61,10 +23,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Remediations() {
   const classes = useStyles();
-  const [remediations, updateRemediations] = React.useState(
-    defaultRemediations,
-    []
-  );
+  const [remediations, updateRemediations] = React.useState([]);
 
   React.useEffect(() => {
     API.get("SoardinatorAPI", "/remediations").then((r) =>
@@ -114,7 +73,6 @@ export default function Remediations() {
             ))}
         </Grid>
       </Grid>
-      <ApiTester />
     </div>
   );
 }
