@@ -169,7 +169,7 @@
         "TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/function/UploadRemediationTemplate-cloudformation-template.json",
         "Parameters": {
           "deploymentBucketName": "amplify-frontend-dev-201512-deployment",
-          "s3Key": "amplify-builds/UploadRemediationTemplate-38423461463959517443-build.zip",
+          "s3Key": "amplify-builds/UploadRemediationTemplate-66415a6c5041384a6437-build.zip",
           "env": "dev"
         }
       }

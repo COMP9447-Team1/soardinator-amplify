@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { NavBar } from "./components/navbar";
 import { Remediations } from "./pages/remediations";
+import { Upload } from "./pages/Upload";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import Amplify from "aws-amplify";
@@ -41,6 +42,9 @@ function App() {
             </Route>
             <Route path="/remediations">
               <Remediations />
+            </Route>
+            <Route path="/upload">
+              <Upload />
             </Route>
           </Switch>
         </AmplifyAuthenticator>

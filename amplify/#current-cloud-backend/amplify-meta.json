@@ -26,7 +26,7 @@
         "IdentityPoolName": "frontendbbd43c91_identitypool_bbd43c91__dev",
         "UserPoolName": "frontendbbd43c91_userpool_bbd43c91"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.759Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.439Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/auth/frontendbbd43c91-cloudformation-template.yml",
         "logicalId": "authfrontendbbd43c91"
@@ -44,7 +44,7 @@
         "Name": "testAmplifyAPI-dev",
         "LambdaExecutionRole": "frontendLambdaRole4124b1bb-dev"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.779Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.461Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/function/testAmplifyAPI-cloudformation-template.json",
         "logicalId": "functiontestAmplifyAPI"
@@ -70,7 +70,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/function/CreateStack-cloudformation-template.json",
         "logicalId": "functionCreateStack"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.804Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.482Z",
       "output": {
         "Region": "us-east-1",
         "Arn": "arn:aws:lambda:us-east-1:221094580673:function:CreateStack-dev",
@@ -94,7 +94,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/function/DeleteStack-cloudformation-template.json",
         "logicalId": "functionDeleteStack"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.823Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.501Z",
       "output": {
         "Region": "us-east-1",
         "Arn": "arn:aws:lambda:us-east-1:221094580673:function:DeleteStack-dev",
@@ -118,7 +118,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/function/GetAvailableRemediations-cloudformation-template.json",
         "logicalId": "functionGetAvailableRemediations"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.850Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.518Z",
       "output": {
         "Region": "us-east-1",
         "Arn": "arn:aws:lambda:us-east-1:221094580673:function:GetAvailableRemediations-dev",
@@ -131,25 +131,25 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
-      "lastBuildTimeStamp": "2021-04-25T15:14:01.493Z",
-      "lastPackageTimeStamp": "2021-04-25T15:14:04.905Z",
-      "distZipFilename": "UploadRemediationTemplate-38423461463959517443-build.zip",
+      "lastBuildTimeStamp": "2021-04-25T15:25:09.235Z",
+      "lastPackageTimeStamp": "2021-04-25T15:25:12.584Z",
+      "distZipFilename": "UploadRemediationTemplate-66415a6c5041384a6437-build.zip",
       "s3Bucket": {
         "deploymentBucketName": "amplify-frontend-dev-201512-deployment",
-        "s3Key": "amplify-builds/UploadRemediationTemplate-38423461463959517443-build.zip"
+        "s3Key": "amplify-builds/UploadRemediationTemplate-66415a6c5041384a6437-build.zip"
       },
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/function/UploadRemediationTemplate-cloudformation-template.json",
         "logicalId": "functionUploadRemediationTemplate"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.991Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.663Z",
       "output": {
         "Region": "us-east-1",
         "Arn": "arn:aws:lambda:us-east-1:221094580673:function:UploadRemediationTemplate-dev",
         "Name": "UploadRemediationTemplate-dev",
         "LambdaExecutionRole": "frontendLambdaRoledf0e6bff-dev"
       },
-      "lastPushDirHash": "8B4aF9YQtCqAnWbaPDh9CXYtZDc="
+      "lastPushDirHash": "fAZlPA8Jd7YsBfVdZsxCAL2/xQc="
     },
     "S3Trigger837f0083": {
       "service": "Lambda",
@@ -166,7 +166,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/function/S3Trigger837f0083-cloudformation-template.json",
         "logicalId": "functionS3Trigger837f0083"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.889Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.560Z",
       "output": {
         "Region": "us-east-1",
         "Arn": "arn:aws:lambda:us-east-1:221094580673:function:S3Trigger837f0083-dev",
@@ -195,7 +195,7 @@
         "RootUrl": "https://imgj4b19wi.execute-api.us-east-1.amazonaws.com/dev",
         "ApiId": "imgj4b19wi"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.907Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.578Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/api/RemediationAPI-cloudformation-template.json",
         "logicalId": "apiRemediationAPI"
@@ -242,7 +242,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/api/SoardinatorAPI-cloudformation-template.json",
         "logicalId": "apiSoardinatorAPI"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.925Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.600Z",
       "output": {
         "ApiName": "SoardinatorAPI",
         "RootUrl": "https://7cpk5sylel.execute-api.us-east-1.amazonaws.com/dev",
@@ -270,7 +270,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
         "logicalId": "storageRemediationCFNs"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.991Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.621Z",
       "output": {
         "BucketName": "soardinator-remediation-cfns-221094580673",
         "Region": "us-east-1"
@@ -287,7 +287,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-201512-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
         "logicalId": "hostingamplifyhosting"
       },
-      "lastPushTimeStamp": "2021-04-25T15:15:20.970Z",
+      "lastPushTimeStamp": "2021-04-25T15:26:34.640Z",
       "output": {},
       "lastPushDirHash": "/+VZ33seFFqAr6wbtptwbINUfSA="
     }
