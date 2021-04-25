@@ -22,7 +22,7 @@ Launch the product!
 amplify publish
 ```
 
-You may need to then pull the changes and republish as there seems to be a (bug in Amplify)[https://github.com/aws-amplify/amplify-cli/issues/3033] where push/publish is not updating the API Urls in aws-exports.js
+You may need to then pull the changes and republish as there seems to be a [bug in Amplify](https://github.com/aws-amplify/amplify-cli/issues/3033) where push/publish is not updating the API Urls in aws-exports.js
 ```
 amplify pull
 amplify publish
