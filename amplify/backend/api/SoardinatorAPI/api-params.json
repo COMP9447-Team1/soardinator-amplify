@@ -1,0 +1,108 @@
+{
+    "paths": [
+        {
+            "name": "/add",
+            "lambdaFunction": "CreateStack",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            },
+            "policyResourceName": "/add"
+        },
+        {
+            "name": "/delete",
+            "lambdaFunction": "DeleteStack",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/delete"
+        },
+        {
+            "name": "/remediations",
+            "lambdaFunction": "GetAvailableRemediations",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/remediations"
+        },
+        {
+            "name": "/upload",
+            "lambdaFunction": "UploadRemediationTemplate",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST"
+                ]
+            },
+            "policyResourceName": "/upload"
+        }
+    ],
+    "resourceName": "SoardinatorAPI",
+    "apiName": "SoardinatorAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "CreateStack"
+        },
+        {
+            "lambdaFunction": "DeleteStack"
+        },
+        {
+            "lambdaFunction": "GetAvailableRemediations"
+        },
+        {
+            "lambdaFunction": "UploadRemediationTemplate"
+        }
+    ],
+    "privacy": {
+        "auth": 4,
+        "unauth": 0,
+        "authRoleName": "amplify-frontend-dev-201512-authRole",
+        "unAuthRoleName": "amplify-frontend-dev-201512-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "CreateStack",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "DeleteStack",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "GetAvailableRemediations",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "UploadRemediationTemplate",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
