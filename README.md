@@ -9,7 +9,7 @@ npm install -g @aws-amplify/cli
 
 Clone this repository
 ```
-git clone git@github.com:COMP9447-Team1/amplify.git
+git clone git@github.com:COMP9447-Team1/soardinator-amplify.git
 ```
 
 Initialise amplify - this will require signing into your aws environment
