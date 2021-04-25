@@ -26,7 +26,7 @@
         },
         "GetAvailableRemediations": {
           "deploymentBucketName": "amplify-frontend-dev-201512-deployment",
-          "s3Key": "amplify-builds/GetAvailableRemediations-514d436856712b333066-build.zip"
+          "s3Key": "amplify-builds/GetAvailableRemediations-4d304e7874765749564f-build.zip"
         },
         "DeleteStack": {
           "deploymentBucketName": "amplify-frontend-dev-201512-deployment",
@@ -34,7 +34,7 @@
         },
         "UploadRemediationTemplate": {
           "deploymentBucketName": "amplify-frontend-dev-201512-deployment",
-          "s3Key": "amplify-builds/UploadRemediationTemplate-484765574c44614d7346-build.zip"
+          "s3Key": "amplify-builds/UploadRemediationTemplate-38423461463959517443-build.zip"
         },
         "CreateStack": {
           "deploymentBucketName": "amplify-frontend-dev-201512-deployment",
