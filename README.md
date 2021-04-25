@@ -21,6 +21,12 @@ Launch the product!
 ```
 amplify publish
 ```
+
+You may need to then pull the changes and republish as there seems to be a (bug in Amplify)[https://github.com/aws-amplify/amplify-cli/issues/3033] where push/publish is not updating the API Urls in aws-exports.js
+```
+amplify pull
+amplify publish
+```
 This will give you a url where the frontend is hosted. You will need to register a user on the application.
 
 
@@ -33,5 +39,11 @@ amplify env add
 
 Then publish to the new environment
 ```
+amplify publish
+```
+
+As above, pull and publish again
+```
+amplify pull
 amplify publish
 ```
